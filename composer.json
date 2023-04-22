@@ -9,7 +9,6 @@
         }
     ],
     "require": {
-        "bitwasp/buffertools": "^0.5.7",
         "react/socket": "^1.12"
     }
 }

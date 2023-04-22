@@ -1,5 +1,8 @@
 <?php declare(strict_types=1);
 
+/**
+ * Dealing with VarInt in PHP
+ */
 function varint_encode(int $val): string {
     $buf = '';
 
