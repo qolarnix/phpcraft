@@ -1,0 +1,15 @@
+{
+    "name": "polarnix/phpcraft2",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "polarnix",
+            "email": "polarnix@pm.me"
+        }
+    ],
+    "require": {
+        "bitwasp/buffertools": "^0.5.7",
+        "react/socket": "^1.12"
+    }
+}
