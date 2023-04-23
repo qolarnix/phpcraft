@@ -43,13 +43,11 @@ $server->on('connection', function(Connection $conn) use($server_status_json) {
         pack('a', '192.168.0.46') . // String (255)
         pack('n', 25565) . // Unsigned Short
         pack('c', varint_encode(1)); // VarInt Enum
-    $conn->write(pack('C', $handshake_packets));
+    $conn->write($handshake_packets);
 
     $conn->on('data', function($data) use($conn, $server_status_json) {
         
-        // if(strpos($data, "\x00") !== false) {
-        //     echo $data;
-        // }
+        print_r($data . "\n");
 
         $server_ping_packets =
             pack('C', 0x01) .

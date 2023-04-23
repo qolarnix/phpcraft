@@ -17,3 +17,11 @@ function varint_encode(int $val): string {
 
 // echo varint_encode(762);
 // echo bin2hex(varint_encode(762));
+
+function read($data) {
+    $clean = '';
+
+    for($i = 0; $i < $data; $i++) {
+        echo hex2bin($data);
+    }
+}
